@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'BenugoFranchise';
+  src: url('./fonts/benugofranchise.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/benugofranchise.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('./fonts/benugofranchise.woff2') format('woff2'), /* Modern Browsers */
+    url('./fonts/benugofranchise.woff') format('woff'), /* Modern Browsers */
+    url('./fonts/benugofranchise.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('./fonts/benugofranchise.svg') format('svg'); /* Legacy iOS */  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bariol';
+  src: url('/fonts/bariol_regular.woff') format('woff'),
+     
+}
+
+
+body {
+    font-family: 'Bariol';
+    background-color: #00bfb2;
+}
+
+h1 {
+    font-family: 'BenugoFranchise';
+    font-size: 64px;
+}
+
+section {
+width: 600px;
+height: 400px;
+position: absolute;
+top: 10%;
+left: 25%;
+margin: -100px 0 0 -150px;
+background-color: #010001;
+padding: 25%;
+padding-top: 10%;
+    
+}
+
+
+/*select the img with an id="logo"*/
+
+section img#logo {
+    margin: auto;
+    width: 50%;
+    display: block;
+}
+
+select,
+button {
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 200%;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+button {
+    border: none;
+    padding: 50px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+section#details {
+    display: none;
+}
+
+section#results {
+    display: none;
+}
+
+.show {
+    display: ;
+}
+
+logo {
+    padding-left: 50%;
+    padding-right: 50%;
+}
+
+#home-title {
+    text-align: center;
+}
