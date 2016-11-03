@@ -1,0 +1,54 @@
+body {
+    font-family: 'Karla', sans-serif;
+    background-image: url(/img/White-Speck.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section {
+    background-color: rgba(229, 161, 9, 0.54);
+    margin: auto;
+    max-width: 50%;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
+/*select the img with an id="logo"*/
+
+section img#logo {
+    margin: auto;
+    width: 50%;
+    display: block;
+}
+
+select,
+button {
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 200%;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+button {
+    border: none;
+    padding: 50px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+section#details {
+    display: none;
+}
+
+section#results {
+    display: none;
+}
+
+.show {
+    display: ;
+}
