@@ -27,15 +27,11 @@ h1 {
 }
 
 section {
-width: 600px;
-height: 400px;
-position: absolute;
-top: 10%;
-left: 25%;
-margin: -100px 0 0 -150px;
-background-color: #010001;
-padding: 25%;
-padding-top: 10%;
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
     
 }
 
@@ -85,4 +81,13 @@ logo {
 
 #home-title {
     text-align: center;
+}
+
+#SectionOpen {
+    
+}
+
+OuterDiv {
+    padding: 15%
+    background-color: #010001;
 }
