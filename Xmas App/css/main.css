@@ -18,12 +18,13 @@
 
 body {
     font-family: 'Bariol';
-    background-color: #00bfb2;
+    background-color: #151315;
 }
 
 h1 {
     font-family: 'BenugoFranchise';
     font-size: 64px;
+    color: white;
 }
 
 section {
@@ -40,7 +41,7 @@ section {
 
 section img#logo {
     margin: auto;
-    width: 50%;
+    width: 60%;
     display: block;
 }
 
@@ -81,6 +82,8 @@ logo {
 
 #home-title {
     text-align: center;
+    color: #f6f7eb;
+    font-size: 9em;
 }
 
 #SectionOpen {
@@ -88,6 +91,22 @@ logo {
 }
 
 OuterDiv {
-    padding: 15%
+     position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
     background-color: #010001;
+}
+
+p {
+     color: #f6f7eb; 
+}
+
+body {
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: repeat-x;
+    background-image: url(/img/Snow.png);
+    background-size: 30%;
 }
