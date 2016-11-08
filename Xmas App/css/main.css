@@ -88,6 +88,10 @@ logo {
 
 #SectionOpen {
     
+    width: 80vw;
+    min-width: 100%;
+    
+    
 }
 
 OuterDiv {
