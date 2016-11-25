@@ -40,28 +40,15 @@ section {
 /*select the img with an id="logo"*/
 
 section img#logo {
-    margin: auto;
-    width: 60%;
+   margin: 0 auto;
+    width: 60vh;
     display: block;
+    margin-top: 20vh
 }
 
-select,
-button {
-    width: 100%;
-    background-color: black;
-    color: white;
-    font-size: 200%;
-    border-radius: 20px;
-    margin: 5px;
-}
 
-button {
-    border: none;
-    padding: 50px;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-}
+
+
 
 section#details {
     display: none;
@@ -78,17 +65,19 @@ section#results {
 logo {
     padding-left: 50%;
     padding-right: 50%;
+    margin-top: 50vw;
+
 }
 
 #home-title {
     text-align: center;
     color: #f6f7eb;
-    font-size: 9em;
+    font-size: 9vw;
 }
 
 #SectionOpen {
     
-    width: 80vw;
+        width: 80vw;
     min-width: 100%;
     
     
@@ -112,5 +101,19 @@ body {
     background-position: top;
     background-repeat: repeat-x;
     background-image: url(https://github.com/thomass96/Benugo-Xmas/blob/master/Xmas%20App/img/Snow.png?raw=true);
-    background-size: 30%;
+    background-size: 50vh;
+}
+
+#landingButton {
+    text-align: center;
+    font-family: 'BenugoFranchise';
+    font-size: 6vmax;
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    color: white;
+    background-color: transparent;
+    outline-color: transparent;
+    outline: none;
+    outline-width: 0px;
 }

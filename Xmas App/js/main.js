@@ -4,7 +4,7 @@ var jay = window.jQuery; // jay jQuery.
 
 // Use jQuery to select the HTML elements we're going to manipulate. //
 
-var homeGoButton = jay('#home button');
+var landingButton = jay('#landingButton');
 var homeSection = jay('#home');
 var resultsSection = jay('#results');
 var resultsBackButton = jay('#results .back')
