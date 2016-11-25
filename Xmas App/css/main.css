@@ -179,3 +179,24 @@ h2 {
     padding-left: 25vw;
     display: inline;
 }
+
+a#landingButton:hover {
+    color: wheat;}
+
+a#tointro {
+    position: fixed;
+    color: black;
+    font-size: 2vmax;
+    padding-left: 10%;
+    background-color: white;
+    padding-right: 10px;
+}
+
+a#toselect {
+    position: fixed;
+    color: black;
+    font-size: 2vmax;
+    padding-left: 10%;
+    background-color: white;
+    padding-right: 10px;
+}
