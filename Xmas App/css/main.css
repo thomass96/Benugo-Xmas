@@ -56,6 +56,7 @@ section#details {
 
 section#SectionSelect {
     display: none;
+    
 }
 
 .show {
@@ -138,11 +139,23 @@ h1 {
     font-size: 6vmax;
     margin: 0;
     padding-bottom: 11px;
+    border-top: 1px solid white;
+    border-top-width: 0.25vmax;
+    padding-top: 1.5vmax;
 }
 
 h2 {
-    font-size: 2vmax;
+  font-size: 2vmax;
     color: white;
     text-align: center;
     margin: 0;
+    border-bottom: 1px solid white;
+    border-bottom-width: 0.25vmax;
+    padding-bottom: 1.5vmax;
+}
+
+.box {
+        width: 80vw;
+    display: block;
+    margin: auto;
 }
