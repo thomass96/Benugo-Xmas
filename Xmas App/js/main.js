@@ -10,6 +10,8 @@ var selectSection = jay('#SectionSelect');
 var resultsBackButton = jay('#results .back');
 var landingLogo = jay('#logo');
 var wordLogo = jay('#wordLogo');
+var xmasDrinksButton = jay('#XmasDrinksButton')
+var sectionDrinks = jay('#SectionDrinks')
 
 // landing button to drink or food page
 landingButton.click(function () {
@@ -20,9 +22,13 @@ landingButton.click(function () {
    
 })
 
-//selectSection page load
+//Xmas Drinks Button
+xmasDrinksButton.click(function () {
+    selectSection.hide()
+    sectionDrinks.show()
 
-
+    
+})
 
 
 

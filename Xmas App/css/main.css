@@ -59,6 +59,11 @@ section#SectionSelect {
     
 }
 
+section#SectionDrinks {
+    display: none;
+    
+}
+
 .show {
     display: ;
 }
@@ -89,6 +94,14 @@ logo {
     min-width: 100%;
     padding-top: 0vh;
     height: 60vh
+}
+
+#SectionDrinks{
+    width: 80vw;
+    min-width: 100%;
+    padding-top: 0vh;
+    height: 60vh
+        
 }
 
 OuterDiv {
