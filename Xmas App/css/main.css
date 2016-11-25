@@ -127,7 +127,7 @@ body {
 }
 
 #wordLogo {
-        width: 30%;
+        width: 30vw;
     min-width: 200px;
     display: block;
     margin: auto;
@@ -161,5 +161,8 @@ h2 {
 }
 
 #xmasCup {
-    width: 50%;
+        width: 25vh;
+    padding-top: 5vh;
+    padding-left: 25vw;
+    display: inline;
 }
