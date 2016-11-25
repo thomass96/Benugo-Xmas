@@ -9,6 +9,7 @@ var homeSection = jay('#SectionOpen');
 var selectSection = jay('#SectionSelect');
 var resultsBackButton = jay('#results .back');
 var landingLogo = jay('#logo');
+var wordLogo = jay('#wordLogo');
 
 // landing button to drink or food page
 landingButton.click(function () {
@@ -18,6 +19,10 @@ landingButton.click(function () {
     selectSection.delay(1000).show(0);
    
 })
+
+//selectSection page load
+
+
 
 
 
