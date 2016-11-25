@@ -54,7 +54,7 @@ section#details {
     display: none;
 }
 
-section#results {
+section#SectionSelect {
     display: none;
 }
 
@@ -81,6 +81,11 @@ logo {
     min-width: 100%;
     
     
+}
+
+#SectionSelect {
+    width: 80vw;
+    min-width: 100%;
 }
 
 OuterDiv {
