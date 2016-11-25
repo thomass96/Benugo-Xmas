@@ -29,6 +29,6 @@ All my blog posts are posted on my portfolio website. The blog posts that are re
 
 The wonderful. however, pretty non-existent app as it stands so far can be found here on [GH Pages](https://thomass96.github.io/Benugo-Xmas/Xmas%20App/) along with my [GitHub Repo](https://github.com/thomass96/Benugo-Xmas)
 
-You can find the beinning phase of my Firebase Pusher here on [Thimble](https://thimbleprojects.org/thomass96/127427/) where I will push the products, but first I need to fine-tune which peices of information I want to display for the products.
+You can find the beginning phase of my Firebase Pusher here on [Thimble](https://thimbleprojects.org/thomass96/127427/) where I will push the products, but first I need to fine-tune which pieces of information I want to display for the products.
 
  

@@ -4,16 +4,33 @@ var jay = window.jQuery; // jay jQuery.
 
 // Use jQuery to select the HTML elements we're going to manipulate. //
 
-var homeGoButton = jay('#home button');
-var homeSection = jay('#home');
-var resultsSection = jay('#results');
-var resultsBackButton = jay('#results .back')
+var landingButton = jay('#landingButton');
+var homeSection = jay('#SectionOpen');
+var selectSection = jay('#SectionSelect');
+var resultsBackButton = jay('#results .back');
+var landingLogo = jay('#logo');
+var wordLogo = jay('#wordLogo');
+var xmasDrinksButton = jay('#XmasDrinksButton')
+var sectionDrinks = jay('#SectionDrinks')
 
-// tell the button to do something when we click it
-homeGoButton.click(function () {
-    homeSection.hide()
-    resultsSection.show()
+// landing button to drink or food page
+landingButton.click(function () {
+    landingLogo.addClass('animated fadeOutUp');
+    landingButton.addClass('animated fadeOutUp');
+    homeSection.delay(500).hide(0);
+    selectSection.delay(1000).show(0);
+   
 })
+
+//Xmas Drinks Button
+xmasDrinksButton.click(function () {
+    selectSection.hide()
+    sectionDrinks.show()
+
+    
+})
+
+
 
 // tell the resultsBackButton to go back
 resultsBackButton.click(function () {

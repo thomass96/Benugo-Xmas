@@ -40,35 +40,28 @@ section {
 /*select the img with an id="logo"*/
 
 section img#logo {
-    margin: auto;
-    width: 60%;
+   margin: 0 auto;
+    width: 60vh;
     display: block;
+    margin-top: 20vh
 }
 
-select,
-button {
-    width: 100%;
-    background-color: black;
-    color: white;
-    font-size: 200%;
-    border-radius: 20px;
-    margin: 5px;
-}
 
-button {
-    border: none;
-    padding: 50px;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-}
+
+
 
 section#details {
     display: none;
 }
 
-section#results {
+section#SectionSelect {
     display: none;
+    
+}
+
+section#SectionDrinks {
+    display: none;
+    
 }
 
 .show {
@@ -78,16 +71,37 @@ section#results {
 logo {
     padding-left: 50%;
     padding-right: 50%;
+    margin-top: 50vw;
+
 }
 
 #home-title {
     text-align: center;
     color: #f6f7eb;
-    font-size: 9em;
+    font-size: 9vw;
 }
 
 #SectionOpen {
     
+        width: 80vw;
+    min-width: 100%;
+    
+    
+}
+
+#SectionSelect {
+    width: 80vw;
+    min-width: 100%;
+    padding-top: 0vh;
+    height: 60vh
+}
+
+#SectionDrinks{
+    width: 80vw;
+    min-width: 100%;
+    padding-top: 0vh;
+    height: 60vh
+        
 }
 
 OuterDiv {
@@ -108,5 +122,60 @@ body {
     background-position: top;
     background-repeat: repeat-x;
     background-image: url(https://github.com/thomass96/Benugo-Xmas/blob/master/Xmas%20App/img/Snow.png?raw=true);
-    background-size: 30%;
+    background-size: 50vh;
+}
+
+#landingButton {
+    text-align: center;
+    font-family: 'BenugoFranchise';
+    font-size: 6vmax;
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    color: white;
+    background-color: transparent;
+    outline-color: transparent;
+    outline: none;
+    outline-width: 0px;
+}
+
+#wordLogo {
+        width: 30vw;
+    min-width: 200px;
+    display: block;
+    margin: auto;
+    padding-bottom: 4%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 6vmax;
+    margin: 0;
+    padding-bottom: 11px;
+    border-top: 1px solid white;
+    border-top-width: 0.25vmax;
+    padding-top: 1.5vmax;
+}
+
+h2 {
+  font-size: 2vmax;
+    color: white;
+    text-align: center;
+    margin: 0;
+    border-bottom: 1px solid white;
+    border-bottom-width: 0.25vmax;
+    padding-bottom: 1.5vmax;
+}
+
+.box {
+        width: 80vw;
+    display: block;
+    margin: auto;
+}
+
+#xmasCup {
+        width: 25vh;
+    padding-top: 5vh;
+    padding-left: 25vw;
+    display: inline;
 }
