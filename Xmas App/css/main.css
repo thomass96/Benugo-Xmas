@@ -1,17 +1,17 @@
 @font-face {
   font-family: 'BenugoFranchise';
-  src: url('./fonts/benugofranchise.eot'); /* IE9 Compat Modes */
-  src: url('./fonts/benugofranchise.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('./fonts/benugofranchise.woff2') format('woff2'), /* Modern Browsers */
-    url('./fonts/benugofranchise.woff') format('woff'), /* Modern Browsers */
-    url('./fonts/benugofranchise.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('./fonts/benugofranchise.svg') format('svg'); /* Legacy iOS */  font-weight: normal;
+  src: url('/fonts/benugofranchise.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/benugofranchise.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/benugofranchise.woff2') format('woff2'), /* Modern Browsers */
+    url('../fonts/benugofranchise.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/benugofranchise.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/benugofranchise.svg') format('svg'); /* Legacy iOS */  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Bariol';
-  src: url('/fonts/bariol_regular.woff') format('woff'),
+  src: url('../fonts/bariol_regular.woff') format('woff'),
      
 }
 
@@ -178,4 +178,25 @@ h2 {
     padding-top: 5vh;
     padding-left: 25vw;
     display: inline;
+}
+
+a#landingButton:hover {
+    color: wheat;}
+
+a#tointro {
+    position: fixed;
+    color: black;
+    font-size: 2vmax;
+    padding-left: 10%;
+    background-color: white;
+    padding-right: 10px;
+}
+
+a#toselect {
+    position: fixed;
+    color: black;
+    font-size: 2vmax;
+    padding-left: 10%;
+    background-color: white;
+    padding-right: 10px;
 }

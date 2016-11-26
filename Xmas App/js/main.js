@@ -7,7 +7,8 @@ var jay = window.jQuery; // jay jQuery.
 var landingButton = jay('#landingButton');
 var homeSection = jay('#SectionOpen');
 var selectSection = jay('#SectionSelect');
-var resultsBackButton = jay('#results .back');
+var introBackButton = jay('#tointro');
+var selectBackButton = jay('#toselect');
 var landingLogo = jay('#logo');
 var wordLogo = jay('#wordLogo');
 var xmasDrinksButton = jay('#XmasDrinksButton')
@@ -32,8 +33,20 @@ xmasDrinksButton.click(function () {
 
 
 
-// tell the resultsBackButton to go back
-resultsBackButton.click(function () {
-    resultsSection.hide()
-    homeSection.show()
+// BUTTON BACK TO INTRO
+introBackButton.click(function () {
+    selectSection.hide()
+    landingLogo.removeClass('animated fadeOutUp');
+landingButton.removeClass('infinite animated fadeOutUp');
+    landingLogo.addClass('animated fadeIn');
+    landingButton.addClass('animated fadeIn');
+    landingButton.removeClass('animated fadeIn');
+    landingButton.delay(100000).addClass('animated infinite pulse')
+    homeSection.show();
+})
+
+// BUTTON BACK TO SELECT SECTION
+selectBackButton.click(function () {
+    sectionDrinks.hide()
+    selectSection.show()
 })
