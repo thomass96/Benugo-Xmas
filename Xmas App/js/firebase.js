@@ -8,7 +8,11 @@
   };
   firebase.initializeApp(config);
 
-var database = firebase.database();
-var peopleDatabase = database.ref('people');
-var peopleList = [];
+var rootRef = firebase.database().ref().child("products");
+
+rootRef.on("child_added", snap => {
+    
+    var drink = snap.child.Attr("drink").val();
+    var food = snap.child.Attr("food").val();
+});
 
