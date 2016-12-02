@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/animate.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="./js/filter.js"></script>
 
 
 
@@ -29,6 +30,30 @@
 
 
     <!-- Add your site or application content here -->
+    
+    <!-- Trigger/Open The Modal -->
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times</span>
+      <h2>Modal Header</h2>
+    </div>
+    <div class="modal-body">
+      <p>Some text in the Modal Body</p>
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+
+</div>
+
 
     <!-- Benugo Fade App Intro  !-->
 
@@ -185,16 +210,6 @@
 
     <script type="text/javascript" src="/scripts/infobox.js"></script>
 
-    <script type="text/javascript">
-		$(document).ready(function(){
-			$('.search-box input.search-btn').hover(function(){
-			    $(this).attr('src', '/media/1087/search-btn-over-bg.png');
-			});
-			$('.search-box input.search-btn').mouseout(function(){
-			    $(this).attr('src', '/media/1088/search-btn-bg.png');
-			});
-		});
-    </script>
 
         <a class="RestartButton" id="toselect2">RESTART</a>
 
@@ -221,6 +236,16 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
+    <script type="text/javascript">
+		$(document).ready(function(){
+			$('.search-box input.search-btn').hover(function(){
+			    $(this).attr('src', '/media/1087/search-btn-over-bg.png');
+			});
+			$('.search-box input.search-btn').mouseout(function(){
+			    $(this).attr('src', '/media/1088/search-btn-bg.png');
+			});
+		});
+    </script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
         (function (b, o, i, l, e, r) {

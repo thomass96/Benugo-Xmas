@@ -25,6 +25,34 @@ var restartBttn = jay('.RestartButton');
 var findBttn = jay('.findBttn');
 var sectionMap = jay('#SectionMap');
 
+// MODAL
+jay(document).ready(function () {
+    setTimeout(function () {
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        jay(document).ready = function () {
+            modal.style.display = "block";
+        };
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        };
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+    }, 20);
+});
+
 // landing button to drink or food page
 landingButton.click(function () {
     landingLogo.addClass('animated fadeOutUp');
@@ -34,11 +62,22 @@ landingButton.click(function () {
 
 });
 
+var resultsList = [];
+
 //Xmas Drinks Button
 xmasDrinksButton.click(function () {
     selectSection.hide();
     sectionDrinks.show();
-
+    var filters =
+        [
+            {
+                key: "class",
+                value: "drink"
+            }
+        ];
+    
+    resultsList = filterAndSortList(productsList, filters);
+    console.log(resultsList)
 
 });
 
@@ -46,8 +85,19 @@ xmasDrinksButton.click(function () {
 xmasFoodButton.click(function () {
     selectSection.hide();
     sectionFood.show();
+    var filters =
+    [
+        {
+            key: "class",
+            value: "food"
+        }
+    ]
+    
+    resultsList = filterAndSortList(productsList, filters)
+    console.log(resultsList);
 
 });
+
 
 
 
@@ -78,7 +128,7 @@ foodBackButton.click(function () {
 
 // FOOD TO RESULTS
 foodButton.click(function () {
-    sectionFood.hide()
+    sectionFood.hide();
     resultsSection.show();
 
 
@@ -104,8 +154,8 @@ drinkReturnBttn.click(function () {
 
 // CHECKBOX LIMITS
 var limit = 2;
-$('input#single-checkbox').on('change', function (evt) {
-    if ($(this).siblings(':checked').length >= limit) {
+jay('input#single-checkbox').on('change', function (evt) {
+    if (jay(this).siblings(':checked').length >= limit) {
         this.checked = false;
     }
 });
@@ -118,9 +168,11 @@ restartBttn.click(function () {
 });
 
 // BUTTON TO MAP
-findBttn.click(function (){
+findBttn.click(function () {
     resultsSection.hide();
     sectionMap.show();
-    $('body').css({"background-attachment" : "inherit"});
-    
+    jay('body').css({
+        "background-attachment": "inherit"
+    });
+
 });

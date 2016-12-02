@@ -8,11 +8,12 @@
   };
   firebase.initializeApp(config);
 
-var rootRef = firebase.database().ref().child("products");
+var productsData = firebase.database().ref("products");
 
-rootRef.on("child_added", snap => {
-    
-    var drink = snap.child.Attr("drink").val();
-    var food = snap.child.Attr("food").val();
-});
+var productsList = []
+
+productsData.on("child_added", function(childData) 
+{
+    productsList.push(childData.val())
+})
 
